@@ -95,6 +95,12 @@
 %Kernels
 %CHECK - Nearest neighbour
 
+\subsection*{Probability / MLE}
+$E[Z] = \sum xp(x). Var[X]=\sigma^2=E[(X-\mu)^2 ]= E[X^2]-\mu^2$.
+\\$L(x_1,…,x_n | \theta)=\Pi_i  p(x_i | \theta) \rightarrow l(\theta)=\sum_i \log(p(x_i | \theta)). \frac{dl(\theta)}{d\theta}=0$.
+\\MAP: $p(\theta│x_1,…,x_n )=p(x_1,…,x_n | \theta)p(\theta)$.
+\\Gaussian: $l= N\ln(\frac{1}{\sqrt{2\pi} \sigma})-\frac{1}{2\sigma^2} \sum_i(x_i-\mu)^2.$
+\\$\mu_{MLE}=\frac{1}{n}\sum x_i$. $\sigma_{MLE}^2 = \frac{1}{n} \sum (x_i-\mu_{MLE} )^2$.
 \subsection*{Bayesian Decision Theory}
 Bayes Rule: \(P(\omega|x)=\frac{P(x|\omega)P(\omega)}{P(x)}, P(x)=\sum_{i}P(x|\omega_i)P(\omega_i)\)
 \(P(x,w) = P(x|w)P(w) = P(w|x)P(x)\)
